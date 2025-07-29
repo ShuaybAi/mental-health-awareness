@@ -9,6 +9,6 @@ assignees: ''
 
 As a: ROLE
 
-I can: CAPABILITY
+I want: OBJECTIVE
 
 So that: RECEIVED BENEFIT
