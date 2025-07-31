@@ -1,15 +1,25 @@
-
-
 /* CSS Variables */
 :root {
     /* --primary-font: 'Inter', sans-serif; */
     /* --secondary-font: 'Macondo', cursive; */
-    --primary-color: #2da5d8;
-    /* --secondary-color: ; */
+    --primary-color: #0dfdf1;
+    --secondary-color: #42b42c;
     /* --highlight-color: ; */
     /* --highlight-color-light: ; */
 }
 
 #navbar {
     background-color: var(--primary-color);
+}
+
+#hero {
+    height: 600px;
+    width: 100%;
+    background-color: var(--primary-color);
+    background: url("../images/pebbles-in-water.webp") no-repeat center center / cover;
+    /* position: relative; */
+}
+
+#hero h1 {
+    color: var(--secondary-color);
 }
