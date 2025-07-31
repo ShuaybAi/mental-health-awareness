@@ -22,7 +22,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg">
+    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/favicon.ico" alt="ribbon logo" class="logo">
@@ -68,8 +68,8 @@
     <!-- Main element to hold all key sections of the home page. Not part of the grid structure -->
     <main>
         <div class="container py-4">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-
+            <h2 class="text-center mb-4 display-3">Common issues</h2>
+            <div class="row row-cols-1 row-cols-md-2 row-cols-xl-4 g-4">
                 <div class="col">
                     <div class="card">
                         <!-- <div class="card-img-top"><i class="fas fa-bolt"></i></div> -->
@@ -123,12 +123,89 @@
                 </div>
 
             </div>
+            <div class="row g-4">
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <!-- <div class="card-img-top"><i class="fas fa-bolt"></i></div> -->
+                        <img src="assets/images/stress.webp" class="card-img-top" alt="Person feeling stress">
+                        <div class="card-body">
+                            <!-- <h2 class="card-title h3">Stress</h2> -->
+                            <p class="card-text">Stress is your body's natural response to pressure, challenges, or
+                                change. In small doses, it can help us stay alert and motivated. But when it builds up
+                                or hangs around too long, it can affect how we feel, think, and behave</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <!-- <div class="card-icon"><i class="fas fa-face-frown"></i></div> -->
+                        <img src="assets/images/anxiety.webp" class="card-img-top" alt="Person feeling anxiety">
+                        <div class="card-body">
+                            <!-- <h2 class="card-title h3">Anxiety</h2> -->
+                            <p class="card-text">Anxiety is your brain’s alarm system—it kicks in when you sense danger
+                                or uncertainty. Sometimes, that alarm goes off even when there’s no real threat, making
+                                everyday things feel overwhelming.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <!-- <div class="card-icon"><i class="fas fa-heart"></i></div> -->
+                        <img src="assets/images/loneliness.webp" class="card-img-top" alt="Person feeling loneliness">
+                        <div class="card-body">
+                            <!-- <h2 class="card-title h3">Loneliness</h2> -->
+                            <p class="card-text">Loneliness isn’t just being alone—it’s feeling unseen, disconnected, or
+                                like you’re on the outside looking in. It can affect mental health deeply, even if
+                                you're surrounded by others.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-xl-3">
+                    <div class="card">
+                        <!-- <div class="card-icon"><i class="fas fa-cloud-rain"></i></div> -->
+                        <img src="assets/images/depression.webp" class="card-img-top" alt="Person feeling depression">
+                        <div class="card-body">
+                            <!-- <h2 class="card-title h3">Depression</h2> -->
+                            <p class="card-text">Depression isn’t just “feeling sad.” It can feel like a heavy fog that
+                                dims everything—motivation, joy, even basic tasks. It’s real, and recovery starts with
+                                kindness and connection.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </main>
 
     <!-- Footer -->
-    <footer>
-        footer
+    <footer id="footer" class="d-flex justify-content-center">
+        <!-- Contact info -->
+        <div class="col-12 col-md-6 col-xl-4">
+            <h3 class="sub-heading-color">Contact info</h3>
+            <address>
+                <strong><i class="fa-solid fa-location-dot"></i> Somewhere</strong><br>
+                123 On<br>
+                Earth
+            </address>
+            <p><i class="fa-solid fa-phone"></i> <strong>012 345 6789</strong><br>
+                <i class="fa-regular fa-paper-plane"></i> someone@on-earth.com
+            </p>
+            <div class="social-links my-4">
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)">
+                    <i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)">
+                    <i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.x.com/" target="_blank" rel="noopener"
+                    aria-label="Visit our X feed (opens in a new tab)">
+                    <i class="fa-brands fa-x-twitter"></i></a>
+            </div>
+        </div>
     </footer>
 
     <!-- Bootstrap JS -->
