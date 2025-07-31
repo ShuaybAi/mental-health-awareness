@@ -8,6 +8,11 @@
     /* --highlight-color-light: ; */
 }
 
+body {
+    /* background-color: #fda000; */
+    /* color: var(--secondary-color); */
+}
+
 #navbar {
     background-color: var(--primary-color);
 }
