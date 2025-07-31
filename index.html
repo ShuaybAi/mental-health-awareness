@@ -22,7 +22,7 @@
 
 <body>
     <!-- Navigation -->
-    <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
+    <nav id="navbar" class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="index.html">
                 <img src="assets/images/favicon.ico" alt="ribbon logo" class="logo">
@@ -38,16 +38,14 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Resources</a>
+                        <a class="nav-link" href="#issues">Common issues</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tips</a>
+                        <a class="nav-link" href="#tips">Tips</a>
+                    </li>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Affirmations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#footer">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +58,7 @@
             <div class="container ">
                 <h1 class="display-2 fw-bold">You Matter!</h1>
                 <p class="lead">Supportive, simple guidance for your mental wellbeing</p>
-                <a href="#" class="btn btn-primary mt-3">Explore Resources</a>
+                <!-- <a href="#" class="btn btn-primary mt-3">Explore Resources</a> -->
             </div>
         </section>
     </header>
@@ -240,7 +238,7 @@
     <footer id="footer" class="d-flex justify-content-center">
         <!-- Contact info -->
         <div>
-            <h3 class="sub-heading-color">Contact info</h3>
+            <h3>Contact info</h3>
             <address>
                 <strong><i class="fa-solid fa-location-dot"></i> Somewhere</strong><br>
                 123 On<br>
@@ -271,6 +269,27 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/57c9e736be.js" crossorigin="anonymous"></script>
 
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
