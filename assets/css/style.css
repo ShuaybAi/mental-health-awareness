@@ -2,20 +2,28 @@
 :root {
     /* --primary-font: 'Inter', sans-serif; */
     /* --secondary-font: 'Macondo', cursive; */
-    --primary-color: #0dfdf1;
-    --secondary-color: #42b42c;
-    /* --highlight-color: ; */
-    /* --highlight-color-light: ; */
+    --primary-color: lightseagreen;
+    --secondary-color: #7eca44;
+    --highlight-color: #42b42c;
+    --highlight-color-second: #198754;
+    --text-background-color: lightgray;
 }
 
+/* General Styles */
+
 body {
-    /* background-color: #fda000; */
-    /* color: var(--secondary-color); */
+    /* background-color: var(--secondary-color); */
+    padding-top: 74px; /* Adjusted for fixed navbar height */
 }
+
+
+/* Navbar */
 
 #navbar {
     background-color: var(--primary-color);
 }
+
+/* Header */
 
 #hero {
     height: 600px;
@@ -26,5 +34,55 @@ body {
 }
 
 #hero h1 {
-    color: var(--secondary-color);
+    color: var(--highlight-color);
+}
+
+/* Main */
+
+#issues {
+    background-color: var(--secondary-color);
+}
+
+#tips h2 {
+    background-color: var(--text-background-color);
+    margin-bottom: 2px;
+}
+
+.card {
+    background-color: var(--text-background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.accordion * {
+    background-color: var(--text-background-color);
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    padding: 1rem; */
+}
+
+#footer {
+    background-color: var(--primary-color);
+    /* color: var(--secondary-color); */
+    padding: 1rem;
+    text-align: center;
+}
+
+.social-links i {
+    color: var(--highlight-color-second);
+    font-size: 1.7rem;
+    margin: 0 0.5rem;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1200px) {
+    .card-body {
+        min-height: 368px;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .card-body {
+        min-height: 296px;
+    }
 }
